@@ -1,6 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public struct BloqueMapa 
+{
+    public float rotacion;
+    public Vector3 posicion;
+    public float tamaño;
+}
+
 public class ReadImage : MonoBehaviour
 {
     [SerializeField]
@@ -37,10 +44,10 @@ public class ReadImage : MonoBehaviour
             currentSpawnPos.y++;
         }
 
-        int filas;
-        int columnas;
+        //int filas = image.width;
+        //int columnas = image.height;
 
-        int[,] matriz = new int[20, 20];
+        //int[,] matriz = new int[filas, columnas];
 
         float pixelesMapa = 0;
 
