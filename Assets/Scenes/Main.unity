@@ -152,8 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151fc6fafbeac6f49a7164ddb19ddd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  images:
-  - {fileID: 2800000, guid: 4458b785e4cb18c42bedfbb6bd212421, type: 3}
+  imagenMapa: {fileID: 2800000, guid: 4458b785e4cb18c42bedfbb6bd212421, type: 3}
   wallObject: {fileID: 6702006876528668967, guid: 18f8de915a8df1a4cbda9b873a3e73ce, type: 3}
   groundObject: {fileID: 4273809153510248712, guid: 0647dd3ea70641e4cb8f49c3d6e1a32f, type: 3}
 --- !u!4 &134055969
