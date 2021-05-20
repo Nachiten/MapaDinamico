@@ -37,24 +37,28 @@ public class ReadImage : MonoBehaviour
             currentSpawnPos.y++;
         }
 
+        int filas;
+        int columnas;
+
+        int[,] matriz = new int[20, 20];
+
+        float pixelesMapa = 0;
+
         counter = 0;
 
         foreach (Vector3 pos in spawnPositions)
         {
             Color c = pix[counter];
 
-            //GameObject objetoAInstanciar = null;
-
             if (c.Equals(Color.white))
             {
                 Instantiate(wallObject, pos, Quaternion.identity);
+                pixelesMapa++;
             }
-            //else if (c.Equals(Color.black))
-            //{
-            //    Instantiate(groundObject, pos, Quaternion.identity);
-            //}
 
             counter++;
         }
+
+        Debug.Log("La cantidad de pixeles del mapa es: " + pixelesMapa);
     } 
 }
